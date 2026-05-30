@@ -6,7 +6,7 @@ import httpx
 import json
 
 
-@register("http_bridge", "FlyModeZ", "", "0.1.1")
+@register("http_bridge", "FlyModeZ", "", "0.1.2")
 class HttpBridge(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
@@ -25,6 +25,8 @@ class HttpBridge(Star):
     # @filter.event_message_type(filter.EventMessageType.ALL, priority=10)
     @filter.command("fm")
     async def bridge(self, event: AstrMessageEvent, content: str):
+        event.stop_event()
+
         payload = {
             "user": event.unified_msg_origin,
             "text": content
