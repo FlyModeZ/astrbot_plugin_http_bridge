@@ -1,0 +1,5 @@
+name: astrbot_plugin_http_bridge
+desc: fm命令会与http终结点沟通。
+version: v0.1.0
+author: FlyModeZ
+repo: https://github.com/FlyModeZ/astrbot_plugin_http_bridge

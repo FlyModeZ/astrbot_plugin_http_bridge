@@ -1,0 +1,8 @@
+{
+  "http_endpoint": {
+    "type": "string",
+    "description": "",
+    "hint": "",
+    "default": "http://localhost:8080/v1/message"
+  }
+}
